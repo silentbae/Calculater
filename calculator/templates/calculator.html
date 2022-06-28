@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculater</title>
+    <link href="{% static 'css/calc.css' %}" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/disclaimer" rel="stylesheet">
+    <script src="{% static 'js/calc.js' %}"></script>
+</head>
+<body class="body">
+    <div class="body">
+        <p>CALCULATOR<br><a href="https://codepen.io/grohit/"></a></p><br><br>
+        <div class="function ">
+            <input type="text" id="n1" placeholder="First Number"><br><br>
+            <input type="text" id="n2" placeholder="Second Number"><br><br>
+            <input type="text" id="n3" placeholder="Result"><br><br>
+            <button class="glow-on-hover" onclick="add()">++</button>
+            <button class="glow-on-hover" onclick="sub()">--</button>
+            <button class="glow-on-hover" onclick="mul()">**</button>
+            <button class="glow-on-hover" onclick="div()">//</button>
+            <button class="glow-on-hover" onclick="rem()">%%</button>
+        </div>
+    </div>
+</body>
+</html>
